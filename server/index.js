@@ -14,6 +14,10 @@ app.use(cors(
 ))
 app.use(express.json())
 
+app.get('/', (req, res) => {
+    res.json("Hello World")
+})
+
 app.post('/register', (req, res) => {
     const {name, email, password} = req.body;
     RegisterModel.findOne({email: email})

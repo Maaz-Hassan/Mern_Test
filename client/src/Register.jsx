@@ -17,7 +17,7 @@ const handleChange = (e) => {
 
 const handleSubmit = (e) => {
   e.preventDefault()
-  axios.post('http://localhost:3001/register', register)
+  axios.post('https://mern-test-psi.vercel.app/register', register)
   .then(result => {
     if(result.data == "User already Registered"){
       alert(result.data)

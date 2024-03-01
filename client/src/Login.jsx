@@ -19,7 +19,7 @@ function Login() {
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    axios.post('http://localhost:3001/login', user)
+    axios.post('https://mern-test-psi.vercel.app/login', user)
     .then(result => {
       if(result.data == "Login Successfully"){
         alert(result.data)
