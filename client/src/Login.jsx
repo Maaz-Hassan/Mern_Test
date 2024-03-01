@@ -7,6 +7,8 @@ import axios from 'axios';
 function Login() {
   const navigate = useNavigate();
   const [user, setuser] = useState({});
+  axios.defaults.withCredentials = true;
+
 
   const handleChange = (e) => {
     setuser({

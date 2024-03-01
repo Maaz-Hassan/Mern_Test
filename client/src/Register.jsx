@@ -7,6 +7,7 @@ import { Link, useNavigate } from 'react-router-dom'
 function Register() {
     const [register , setRegister] = useState({})
     const navigate = useNavigate();
+    axios.defaults.withCredentials = true;
 
 const handleChange = (e) => {
   setRegister({
