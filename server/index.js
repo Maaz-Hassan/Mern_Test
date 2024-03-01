@@ -1,6 +1,6 @@
+var mongoose = require("mongoose")
 var express = require("express")
 var cors = require("cors")
-
 var RegisterModel = require("./Model/User")
 
 var app = express()
@@ -13,6 +13,9 @@ app.use(cors(
     }
 ))
 app.use(express.json())
+
+mongoose.connect("mongodb+srv://sengineer804:maaz1234@cluster0.197khlz.mongodb.net/test?retryWrites=true&w=majority&appName=Cluster0")
+
 
 app.get('/', (req, res) => {
     res.json("Hello World")
