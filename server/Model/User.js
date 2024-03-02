@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 // MongoDB Atlas connection string
-const uri = 'mongodb+srv://sengineer804:maaz1234@cluster0.197khlz.mongodb.net/test?retryWrites=true&w=majority';
+const uri = 'mongodb+srv://sengineer804:maaz1234@cluster0.197khlz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 
 // Connect to MongoDB Atlas
 mongoose.connect(uri, {
