@@ -7,7 +7,7 @@ var app = express()
 
 app.use(cors(
     {
-        origin: ["https://mern-test-frontend-five.vercel.app"],
+        origin: ["https://mern-test-frontend-five.vercel.app/"],
         methods: ["POST", "GET"],
         credentials: true
     }
