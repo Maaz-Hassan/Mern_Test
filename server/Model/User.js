@@ -7,7 +7,6 @@ const uri = 'mongodb+srv://sengineer804:maaz1234@cluster0.197khlz.mongodb.net/te
 mongoose.connect(uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
-  useCreateIndex: true // Optional, but recommended to avoid deprecation warning
 }).then(() => {
   console.log('Connected to MongoDB Atlas');
 }).catch(err => {

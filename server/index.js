@@ -7,11 +7,12 @@ var app = express()
 
 app.use(cors(
     {
-        origin:["https://mern-test-frontend-five.vercel.app"],
-        methods:["POST", "GET"],
+        origin: ["https://mern-test-frontend-five.vercel.app"],
+        methods: ["POST", "GET"],
         credentials: true
     }
-))
+));
+
 app.use(express.json())
 
 
