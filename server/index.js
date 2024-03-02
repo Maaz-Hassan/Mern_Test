@@ -18,7 +18,7 @@ app.use(express.json())
 
 
 app.get('/', (req, res) => {
-    res.json("Hello World")
+    res.json("Hello World 123")
 })
 
 app.post('/register', (req, res) => {
